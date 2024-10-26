@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APK Download Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #121212;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 420px;
+      background: linear-gradient(145deg, #1f1f2e, #2b2b3d);
+      border-radius: 20px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
+    }
+
+    .apk-logo {
+      width: 90px;
+      height: 90px;
+      border-radius: 20px;
+      margin: 0 auto 20px;
+    }
+
+    .apk-title {
+      font-size: 1.7em;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .download-btn {
+      display: inline-block;
+      padding: 14px 24px;
+      background: linear-gradient(145deg, #4a90e2, #357ab7);
+      color: #fff;
+      font-size: 1.1em;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      margin-bottom: 20px;
+      transition: background 0.3s ease;
+      box-shadow: 0px 4px 10px rgba(58, 134, 255, 0.4);
+    }
+
+    .download-btn:hover {
+      background: linear-gradient(145deg, #357ab7, #4a90e2);
+    }
+
+    .screenshot-slider {
+      display: flex;
+      overflow-x: auto;
+      gap: 12px;
+      padding: 12px 0;
+    }
+
+    .screenshot-slider img {
+      width: 70px;
+      height: 130px;
+      border-radius: 15px;
+      object-fit: cover;
+      flex-shrink: 0;
+      transition: transform 0.3s ease;
+    }
+
+    .screenshot-slider img:hover {
+      transform: scale(1.05);
+    }
+
+    .telegram-btn {
+      display: inline-block;
+      padding: 10px 22px;
+      background: #0088cc;
+      color: #fff;
+      font-size: 0.95em;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      margin-top: 15px;
+      transition: background 0.3s ease;
+      box-shadow: 0px 4px 10px rgba(0, 136, 204, 0.4);
+    }
+
+    .telegram-btn:hover {
+      background: #006699;
+    }
+
+    .password-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 0;
+      font-size: 1.1em;
+      color: #ff7675;
+      font-weight: bold;
+    }
+
+    .password-text {
+      margin-right: 10px;
+    }
+
+    .copy-btn {
+      padding: 6px 12px;
+      background: #3a86ff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 0.9em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .copy-btn:hover {
+      background: #1a65d4;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <img src="logo1.png" alt="APK Logo" class="apk-logo">
+  <div class="apk-title">Aviator Hack v1.0</div>
+  
+  <!-- Password section with copy button -->
+  <div class="password-container">
+    <span class="password-text">Password: aviator_es</span>
+    <button class="copy-btn" onclick="copyPassword()">Copy</button>
+  </div>
+  
+  <a href="Aviator Hack V1.0.apk" class="download-btn">Download APK</a>
+
+  <div class="screenshot-slider">
+    <img src="screenshot1.png" alt="Screenshot 1">
+    <img src="screenshot2.png" alt="Screenshot 2">
+    <img src="screenshot3.png" alt="Screenshot 3">
+    <img src="screenshot4.png" alt="Screenshot 4">
+  </div>
+
+  <a href="https://telegram.me/EarningScripter1" class="telegram-btn">Join Telegram</a>
+</div>
+
+<script>
+  function copyPassword() {
+    const password = "aviator_es";
+    navigator.clipboard.writeText(password).then(() => {
+      alert("Password copied to clipboard!");
+    }).catch(err => {
+      console.error("Could not copy text: ", err);
+    });
+  }
+</script>
+
+</body>
+</html>
